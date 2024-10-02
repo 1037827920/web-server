@@ -8,7 +8,7 @@ use std::{
 use rust_multiple_thread::ThreadPool;
 
 fn main() {
-	let listener = TcpListener::bind("192.168.218.128:8080").unwrap();
+	let listener = TcpListener::bind("localhost:8080").unwrap();
 	// 首先创建一个包含4个线程的线程池
     let pool = ThreadPool::new(4);
     
